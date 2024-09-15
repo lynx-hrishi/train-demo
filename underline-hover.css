@@ -1,0 +1,136 @@
+body{
+    /* background: url(peakpx.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background: linear-gradient(to left,blue, purple);  /* rgba(0,0,0,0.8), rgba(0,0,0,0.2) */
+}
+
+.wrapper{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.wrapper .logo{
+    font-size: 40px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+    left:100px
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+
+.menu a:hover::before{
+    width: 90%;
+}
+
+.wrapper .register a{
+    position: relative;
+    right: -150px;
+    text-decoration: none;
+    color: white;
+    background-color: indianred;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.wrapper .register a:hover{
+    background: transparent;
+    /* color: indianred; */
+    transition: 0.2s linear;
+    border: 1px solid indianred;
+}
+
+.section #enj{
+    position: absolute;
+    top: 45%;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.section h4{
+    text-align: center;
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 2px;
+    font-size: 3.5em;
+}
+
+.section a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: indianred;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.section a:hover{
+    background-color: transparent;
+    /* color: indianred; */
+    transition: 0.2s linear;
+    border: 1px solid indianred;
+}
+
+.expert a{
+    text-decoration: none;
+    color: white;
+    /* background-color: indianred; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    position: relative;
+}
+
+.expert a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+}
+
+.expert a::after{
+    transform: scale(0,1);
+    transition: transform 0.4s ease-in;
+}
+
+.expert a:focus::after{
+    transform: scale(1,1);
+}
+
+.expert i{
+    position: relative;
+    right: 20px;
+}

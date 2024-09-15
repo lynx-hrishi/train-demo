@@ -1,0 +1,70 @@
+<?php
+    include("config.php")
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="icon" href="train-icon.jpg">
+    <link rel="stylesheet" href="payment-page.css?v=<?=$version?>">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1dce73a680.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="heading">Enter Passenger Details</h1>
+        <div class="form-div" id="form-div">
+        <form action="#">
+            <input type="text" id="fullname" placeholder="Enter Full Name">
+            <input type="tel" id="fname" placeholder="Enter Age">
+            <input type="email" placeholder="Enter Your Email" id="email">
+
+            <select name="berth" id="">
+                <option hidden disabled selected>Berth Preference</option>
+                <option value="Lower Berth">Lower Berth</option>
+                <option value="Middle Berth">Middle Berth</option>
+                <option value="Upper Berth">Upper Berth</option>
+            </select>
+            <button type="button" onclick="transitionToSecPage()">Submit</button>
+        </div>
+            
+            <div class="radio-div" id="radio-div">
+                <input type="radio" value="Male" id="gender" name="gender">
+                <label for="gender"><i class="fa-solid fa-person"></i></label>
+                <input type="radio" value="female" id="gender2" name="gender">
+                <label for="gender2"><i class="fa-solid fa-person-dress"></i></label>
+            </div>
+        </form>
+
+        <div class="show-qr" id="show-qr">
+            <h1>Payment Page</h1>
+            <div class="img-show-div">
+                <span>Scan the QR Code with any UPI App and pay the amount</span>
+                <img src="" alt="QR code" class="get_qr"><br>
+
+                
+                <label for="ref">After Payment, Enter the Reference no. for verification</label>
+                <input type="tel" placeholder="Enter Payment Reference No.">
+
+                <button type="submit" onclick="showLastMessage()">Submit</button>
+            </div>
+            
+        </div>
+
+        <div class="last-page" id="last-page">
+            <h1>Have a Happy Journey</h1>
+            <div class="last-span">
+                <span id="confiramtion-message"></span>
+                <span id="msg-2"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="payment-page.js"></script>
+</body>
+</html>

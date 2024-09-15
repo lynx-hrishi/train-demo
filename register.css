@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: url(train-moving-background.gif) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "poppins", sans-serif;
+
+    /* width: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    margin-top: 5%;
+    border: 2px solid;
+    height: 730px;
+    width: 550px;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+}
+
+.wrapper h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+}
+
+.wrapper .input-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-fields input{
+    width: 90%;
+    height: 50px;
+    margin: 10px 3%;
+    border-radius: 20px;
+    padding-left: 15px;
+    border: 3px solid white;
+    outline: none;
+
+    font-size: 20px;
+    background-color: transparent;
+    color: blue;
+
+    &::placeholder{
+        color: white;
+    }
+
+    &:hover{
+        border-color: blue;
+    }
+}
+
+.input-fields .btn{
+    text-align: center;
+}
+
+.btn button{
+    width: 90%;
+    height: 40px;
+    margin: 20px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: transparent;
+        border: 2px solid blue;
+        transition: 0.3s linear;
+    }
+
+    &:active{
+        background-color: rgba(0, 255, 255, 0.336);
+    }
+}
+
+.wrapper .icons-reg{
+    text-align: center;
+    width: 150px;
+    margin-left: 38%;
+    font-size: 17px;
+    padding: 10px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.icons-reg i{
+    font-size: 30px;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.icons-reg #facebook{
+    color: blue;
+    cursor: pointer;
+}
+
+.icons-reg #google{
+    color: indianred;
+    cursor: pointer;
+}
+
+.wrapper .login{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+.login a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+
+    &:hover{
+        color: aqua;
+    }
+}

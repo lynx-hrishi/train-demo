@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: url(train-moving-background.gif) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "poppins", sans-serif;
+
+    /* width: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.wrapper h1{
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 8%;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+}
+
+.wrapper .form-div{
+    width: 40%;
+    height: 500px;
+    margin-left: 30%;
+    border: 1px solid;
+    text-align: center;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+}
+
+.form-div input, select{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    margin: 20px;
+    padding-left: 20px;
+    font-size: 22px;
+    text-align: center;
+
+    &::placeholder{
+        color: white;
+    }
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.314);
+        transition: 0.2s linear;
+    }
+}
+
+.form-div option{
+    background-color: white;
+    color: black;
+}
+
+.wrapper .radio-div{
+    font-size: 3em;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+}
+
+.form-div button{
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 470px;
+    right: 200px;
+
+    &:hover{
+        background-color: transparent;
+        border: 1px solid blue;
+        transition: .3s linear;
+    }
+
+    &:active{
+        background-color: aqua;
+    }
+}
+
+.show-qr .img-show-div{
+    color: white;
+    font-size: 2em;
+    border: 1px solid;
+    width: 1000px;
+    height: 475px;
+    text-align: center;
+    margin-left: 18%;
+    padding: 10px;
+
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+}
+
+.img-show-div img{
+    margin: 5% 0 2% 0; 
+}
+
+.img-show-div input{
+    height: 50px;
+    width: 90%;
+    font-size: 22px;
+    padding-left: 15px;
+    outline: none;
+    color: white;
+    text-align: center;
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+
+    &::placeholder{
+        color: white;
+    }
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.314);
+        transition: 0.2s linear;
+    }
+}
+
+.img-show-div button{
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+
+    &:hover{
+        background-color: transparent;
+        border: 1px solid blue;
+        transition: .3s linear;
+    }
+
+    &:active{
+        background-color: aqua;
+    }
+}
+
+.last-page .last-span{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}

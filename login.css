@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: url(train-moving-background.gif) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: "poppins", sans-serif;
+    /* width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.wrapper{
+    height: 550px;
+    width: 500px;
+    margin-left: 35%;
+    margin-top: 7%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+}
+
+.wrapper h2{
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+}
+
+.wrapper input{
+    /* margin-left: 10%; */
+    width: 90%;
+    height: 50px;
+    color: white;
+    border-radius: 30px;
+    border: 3px solid white;
+    outline: none;
+    margin: 8px 12px ;
+    padding-left: 20px;
+    font-size: 22px;
+    background-color: transparent;
+
+    &::placeholder{
+        color: white;
+    }
+
+    &:hover{
+        border-color: blue;
+    }
+}
+
+.wrapper #forget-pass{
+    position: relative;
+    left: 62%;
+    font-size: 18px;
+    text-decoration: none;
+    color: blue;
+
+    &:hover{
+        color: aqua;
+    }
+}
+
+.wrapper button{
+    width: 90%;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        background-color: transparent;
+        border: 2px solid blue;
+        transition: 0.3s linear;
+        color: white;
+    }
+    &:active{
+        background-color: rgba(0, 255, 255, 0.336);
+    }
+}
+
+/* .wrapper span{
+    font-size: 20px;
+    margin-left: 30%;
+} */
+
+.wrapper .icons{
+    width: 130px;
+    text-align: center;
+    margin-left: 38%;
+    font-size: 17px;
+    padding: 30px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.icons i{
+    font-size: 30px;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.icons #facebook{
+    color: blue;
+    cursor: pointer;
+}
+
+.icons #google{
+    color: indianred;    
+    cursor: pointer;
+}
+
+.wrapper #register{
+    color: white;
+    font-size: 17px;
+    position: relative;
+    bottom: 10px;
+    margin-left: 23%;
+}
+
+#register a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover{
+        color: aqua;
+    }
+}

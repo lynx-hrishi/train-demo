@@ -1,0 +1,149 @@
+<?php
+    include("config.php")
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <script src="https://kit.fontawesome.com/1dce73a680.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ticket-booking-page.css?v=<?=$version?>">
+    <link rel="icon" href="train-icon.jpg">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sources">
+            <div class="train">
+                <i id="train-icon" class="fa-solid fa-train"></i>
+                <span id="train" onclick="train()">Train</span>
+            </div>
+
+            <div class="flight">
+                <i id="aeroplane-icon" class="fa-solid fa-plane-departure"></i>
+                <span id="aeroplane" onclick="aeroplane()">Aeroplane</span>
+            </div>
+
+            <div class="buses">
+                <i id="bus-icon" class="fa-solid fa-bus"></i>
+                <span id="bus" onclick="bus()">Bus</span>
+            </div>
+
+            <div class="hotel">
+                <i id="hotel-icon" class="fa-solid fa-hotel"></i>
+                <span id="hotel" onclick="hotel()">Hotel</span>
+            </div>
+
+            <div class="ticket-booking-txt">
+                <h2>Train Ticket Booking</h2>
+                <span>IRCTC Authorised Partner</span>
+            </div>
+        </div>
+
+        <div class="result" id="train-div">
+
+            <div class="radios">
+                <input type="radio" checked="checked" onclick="showTicketBooking()" value="Book Tickets" id="type" name = "type">
+                <label for="type">Book Tickets</label>
+
+                <input type="radio" id="pnr" onclick="showPNR()" value="2" name = "type">
+                <label for="pnr">Check PNR</label>
+
+                <input type="radio" id="live-train" onclick="showTrainStatus()" value="Live Train Status" name = "type">
+                <label for="live-train">Live Train Status</label>
+            </div>
+
+            <div class="input-fields" id="train-details">
+                    <input type="text" placeholder="From" name="departure" id="departure" list="places">
+                    <datalist id="places">
+                        <option value="Lokmanyatilak T (LTT)"></option>
+                        <option value="Varanasi Jn (BSB)"></option>
+                        <option value="Gohad Road (GOA)"></option>
+                        <option value="Pune Jn (PUNE)"></option>
+                    </datalist>
+
+                    <input type="text" placeholder="To" name="destination" id="destinations" list="places">
+                    <datalist id="places">
+                        <option value="Lokmanyatilak T (LTT)"></option>
+                        <option value="Varanasi Jn (BSB)"></option>
+                        <option value="Gohad Road (GOA)"></option>
+                        <option value="Pune Jn (PUNE)"></option>
+                    </datalist>
+
+                    <input type="date" placeholder="Enter date">
+
+                    <!-- <input type="text" list="classes" id="class" placeholder="Select Class"> -->
+                    <!-- <label for="classes">Select Class</label> -->
+                    <select name="classes" id="classes">
+                        <option value="#" hidden disabled selected>Select Class</option>
+                        <option value="All CLass">All CLass</option>
+                        <option value="Sleeper Class">Sleeper Class</option>
+                        <option value="Third AC">Third AC</option>
+                        <option value="Second AC">Second AC</option>
+                        <option value="First AC">First AC</option>
+                        <option value="Second Seating">Second Seating</option>
+                        <option value="Vistadome AC">Vistadome AC</option>
+                        <option value="AC Chair Car">AC Chair Car</option>
+                        <option value="First Class">First Class</option>
+                        <option value="Third AC Economy">Third AC Economys</option>
+                    </select>
+
+                    <a href="available-trains.html"><button id="btn" type="submit">Search</button></a>
+                </div>
+
+            <div id="pnr-div">
+                <label for="pnr-input">Enter PNR: </label><br>
+                <input type="text" placeholder="Enter 10 digit PNR">
+
+                <button type="button">Submit</button>
+            </div>
+            
+            <div id="live-train-status">
+                <span>This feature isn't available currently <br>
+                We are working and will be available soon...</span>
+            </div>
+            </div>
+        </div>
+
+        <div class="flight-div" id="flight-result">
+            <h1>Our team is working on Flight Bookings <br>It will be available Soon...</h1>
+        </div>
+        <div class="bus-div" id="bus-result">
+            <h1>Our team is working on Bus Bookings <br>It will be available Soon...</h1>
+        </div>
+        <div class="hotel-div" id="hotel-result">
+            <h1>Our team is working on Hotel Bookings <br>It will be available Soon...</h1>
+        </div>
+    </div>
+
+
+<script src="ticket-booking-page.js"></script>
+</body>
+</html>
+
+
+<!-- .underline-link {
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Position relative for the pseudo-element */
+  }
+  
+  .underline-link:focus::after {
+    content: ''; /* No text content needed */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Start from the left edge */
+    bottom: -2px; /* Position the line just below the text */
+    width: 100%; /* Full width of the element */
+    height: 2px; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    transform: scaleX(0); /* Initially scale the underline to 0 */
+    transform-origin: bottom right; /* Transform origin for the animation effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .underline-link:focus::after {
+    transform: scaleX(1); /* Scale the underline to full width when focused */
+  }
+   -->
